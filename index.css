@@ -1,0 +1,89 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #1b3640 0%, #0c1a21 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* GitHub Logo Graphic Container (Scaled down) */
+.logo-container {
+    background-color: #17303b;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.github-logo {
+    fill: #0c151c;
+    width: 80px;
+    height: 80px;
+}
+
+/* Text and Descriptions */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+}
+
+.content-section p {
+    font-size: 0.95rem;
+}
+
+/* Terminal Console Box (Smaller width and padding) */
+.terminal-box {
+    background-color: #000000;
+    border: 1px solid #222;
+    padding: 12px 20px;
+    width: 220px;
+    text-align: left;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-box ul {
+    list-style-type: square;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.terminal-box li {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+}
